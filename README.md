@@ -1,4 +1,4 @@
-Syntax Hightlighting for C0 in VIM
+Syntax Highlighting for C0 in VIM
 ==================================
 
 Enable Syntax Highlighting for Frank Pfenning's imperative
