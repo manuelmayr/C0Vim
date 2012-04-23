@@ -8,7 +8,7 @@ teaching language [C0][C0] in your favourite editor.
 The features so far:
 
 - basic syntax highlighting
-- detection for `*.c` and `*.h0` files
+- detection for `*.c0` and `*.h0` files
 
 Installation
 ------------
@@ -18,7 +18,7 @@ you can choose between an automatic installation via
 **Vimball** or the **Manual installation**.
 
 ### Vimball:
-Automatic installation the Vimball via
+Automatic installation of the Vimball via
 
 ```
 vim -c 'so %' -c 'q' c0.vba
