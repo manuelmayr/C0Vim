@@ -1,3 +1,5 @@
 #!/bin/bash
 
+[ -f c0.vba ] && rm c0.vba
+
 vim -c '%MkVimball c0' -c 'q' files
