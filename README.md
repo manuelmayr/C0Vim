@@ -25,7 +25,7 @@ vim -c 'so %' -c 'q' c0.vba
 ```
 
 ### Manual 
-Copy the all needed files via
+Copy all needed files via
 
 ```
 cp syntax/c0.vim $HOME/.vim/syntax
