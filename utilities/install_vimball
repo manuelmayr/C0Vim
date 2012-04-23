@@ -1,10 +1,10 @@
 #!/bin/bash
 
-[ -f ../c0.vba ] || cat <<EOF
+[ -f ./c0.vba ] || cat <<EOF
 Create Vimball first with
 
 ``create_vimball``
 
 EOF
 
-vim -c 'so %' -c 'q' ../c0.vba
+vim -c 'so %' -c 'q' ./c0.vba

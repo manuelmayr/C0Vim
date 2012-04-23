@@ -31,6 +31,7 @@ syn match	c0Number		display contained "0x\x\+\(u\=l\{0,2}\|ll\=u\)\>"
 syn match	c0Octal		display contained "0\o\+\(u\=l\{0,2}\|ll\=u\)\>" contains=cOctalZero
 syn match	c0OctalZero	display contained "\<0"
 
+syn region c0Included display contained start=+"+ skip=+\\\\\|\\"+ end=+"+
 syn match	c0Included display contained "<[^>]*>"
 syn match	c0Use display "^\s*#use\s*["<]" contains=c0Included
 
