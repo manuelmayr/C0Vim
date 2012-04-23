@@ -1,24 +1,39 @@
-Syntax Highlighting for C0 in VIM
+Syntax Highlighting for [C0][C0] in VIM
 ==================================
 
 Enable Syntax Highlighting for Frank Pfenning's imperative
 teaching language [C0][C0] in your favourite editor.
 
+### Features
+The features so far:
+
+- basic syntax highlighting
+- detection for `*.c` and `*.h0` files
+
 Installation
 ------------
 
-### Vimball
-Simply execute `./create_vimball` and `./install_vimball` on
-your terminal.
+To install syntax highlighting for [C0][C0] in **VIM**
+you can choose between an automatic installation via
+**Vimball** or the **Manual installation**.
 
-### Setting up your vimrc
-You need to add the follwing line to your `$HOME/.vimrc`:
+### Vimball:
+Automatic installation the Vimball via
 
 ```
-autocmd BufRead,BufNewFile *.c0 set filetype=c0 
+vim -c 'so %' -c 'q' c0.vba
+```
+
+### Manual 
+Copy the all needed files via
+
+```
+cp syntax/c0.vim $HOME/.vim/syntax
+cp ftdetect/c0.vim $HOME/.vim/ftdetect
 ```
 
 [C0]: http://c0.typesafety.net/
 
-Enjoy
+Enjoy,
+-- Manuel
 
