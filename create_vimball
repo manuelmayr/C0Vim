@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vim -c '%MkVimball c0' -c 'q' files

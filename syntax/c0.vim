@@ -15,6 +15,7 @@ syn keyword c0Conditional if else
 syn keyword c0Types int bool string void
 syn keyword c0Typedef typedef
 syn keyword c0Struct struct
+syn keyword c0Return return
 
 syn keyword c0BoolConst true false
 syn match	c0Special	display contained "\\\(x\x\+\|\o\{1,3}\|.\|$\)"
@@ -51,6 +52,7 @@ let b:current_syntax="c0"
 
 hi def link c0LoopStmts Repeat
 hi def link c0Conditional Conditional
+hi def link c0Return Special
 
 hi def link c0Types Type
 hi def link c0Struct Structure
