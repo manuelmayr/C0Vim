@@ -10,7 +10,7 @@ if exists("b:current_syntax")
 endif
 
 " C0 keywords
-syn keyword c0LoopStmts while for
+syn keyword c0LoopStmts while for break continue
 syn keyword c0Conditional if else
 syn keyword c0Types int bool string void
 syn keyword c0Typedef typedef
