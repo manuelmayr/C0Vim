@@ -39,6 +39,7 @@ syntax region	c0Block		start="{" end="}" transparent fold
 syn keyword c0Todo contained TODO FIXME XXX
 syn match c0Contract display contained "@\(requires\|ensures\|loop_invariant\|assert\)"
 syn match c0Contract display contained "\\old([^)]*)"
+syn match c0Contract display contained "\\length([^)]*)"
 syn match c0Contract display contained "\\result"
 syn cluster	c0CommentGroup	contains=c0Todo,c0Contract
 syntax match	c0CommentStartError display "/\*"me=e-1 contained
