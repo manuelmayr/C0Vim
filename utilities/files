@@ -1,2 +1,3 @@
 syntax/c0.vim
 ftdetect/c0.vim
+compiler/c0.vim
