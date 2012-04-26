@@ -9,6 +9,7 @@ The features so far:
 
 - basic syntax highlighting
 - detection for `*.c0` and `*.h0` files
+- simple compiler support via `:make`
 
 Installation
 ------------
