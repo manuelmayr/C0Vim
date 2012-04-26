@@ -84,5 +84,31 @@ hi def link c0CommentString c0Comment
 hi def link c0CommentL c0Comment
 hi def link c0Comment Comment
 ftdetect/c0.vim	[[[1
-1
-autocmd BufRead,BufNewFile *.c0,*.h0 set filetype=c0 
+5
+augroup filedetect
+  autocmd!
+  autocmd BufRead,BufNewFile *.c0,*.h0 set filetype=c0 
+  autocmd BufRead,BufNewFile *.c0 compiler c0
+augroup END
+compiler/c0.vim	[[[1
+20
+" Vim compiler file
+" Compiler: C0 Compiler
+" Maintainer: Manuel Mayr <manuel.mayr@uni-tuebingen.de>
+" Latest Revision: 2012-04-24
+
+if exists("current_compiler")
+  finish
+endif
+let current_compiler = "cc0"
+
+if exists(":CompilerSet") != 2		" older Vim always used :setlocal
+  command -nargs=* CompilerSet setlocal <args>
+endif
+
+let s:cpo_save = &cpo
+set cpo-=C
+
+CompilerSet errorformat&
+
+CompilerSet makeprg=cc0\ -o\ \"%:r\"\ \"%:p\"
