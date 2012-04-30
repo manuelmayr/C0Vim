@@ -109,6 +109,6 @@ endif
 let s:cpo_save = &cpo
 set cpo-=C
 
-CompilerSet errorformat&
+CompilerSet errorformat=%f:%l.%c-%*[0-9].%*[0-9]:error:%m
 
 CompilerSet makeprg=cc0\ -o\ \"%:r\"\ \"%:p\"

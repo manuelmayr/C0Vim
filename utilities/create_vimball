@@ -4,5 +4,6 @@
 
 cp ../syntax/c0.vim $HOME/.vim/syntax/
 cp ../ftdetect/c0.vim $HOME/.vim/ftdetect/
+cp ../compiler/c0.vim $HOME/.vim/compiler
 
 vim -c '%MkVimball c0' -c 'q' files
