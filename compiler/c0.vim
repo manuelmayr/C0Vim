@@ -17,4 +17,4 @@ set cpo-=C
 
 CompilerSet errorformat=%f:%l.%c-%*[0-9].%*[0-9]:error:%m
 
-CompilerSet makeprg=cc0\ -o\ \"%:r\"\ \"%:p\"
+CompilerSet makeprg=cc0\ \-d\ -o\ \"%:r\"\ \"%:p\"

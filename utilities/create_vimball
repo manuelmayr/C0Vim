@@ -2,8 +2,8 @@
 
 [ -f ./c0.vba ] && rm ./c0.vba
 
-cp ../syntax/c0.vim $HOME/.vim/syntax/
-cp ../ftdetect/c0.vim $HOME/.vim/ftdetect/
-cp ../compiler/c0.vim $HOME/.vim/compiler
+cp $HOME/.vim/syntax/c0.vim   ../syntax/
+cp $HOME/.vim/ftdetect/c0.vim ../ftdetect/
+cp $HOME/.vim/compiler/c0.vim ../compiler
 
 vim -c '%MkVimball c0' -c 'q' files

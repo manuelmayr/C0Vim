@@ -84,9 +84,8 @@ hi def link c0CommentString c0Comment
 hi def link c0CommentL c0Comment
 hi def link c0Comment Comment
 ftdetect/c0.vim	[[[1
-5
+4
 augroup filedetect
-  autocmd!
   autocmd BufRead,BufNewFile *.c0,*.h0 set filetype=c0 
   autocmd BufRead,BufNewFile *.c0 compiler c0
 augroup END
@@ -111,4 +110,4 @@ set cpo-=C
 
 CompilerSet errorformat=%f:%l.%c-%*[0-9].%*[0-9]:error:%m
 
-CompilerSet makeprg=cc0\ -o\ \"%:r\"\ \"%:p\"
+CompilerSet makeprg=cc0\ \-d\ -o\ \"%:r\"\ \"%:p\"
